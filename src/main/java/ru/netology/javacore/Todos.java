@@ -5,8 +5,17 @@ import java.util.stream.Collectors;
 
 public class Todos {
 
-    String type;
-    String task;
+    public String getType() {
+        return type;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+    private String type;
+    private String task;
+
     ArrayList<String> spisok = new ArrayList<>();
 
     public void addTask(String task) {
@@ -25,4 +34,5 @@ public class Todos {
         }
         return sb.toString();
     }
+
 }
