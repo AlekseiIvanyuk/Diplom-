@@ -5,15 +5,10 @@ import java.util.stream.Collectors;
 
 public class Todos {
 
-    public String getType() {
-        return type;
-    }
-
     public String getTask() {
         return task;
     }
 
-    private String type;
     private String task;
 
     ArrayList<String> spisok = new ArrayList<>();
