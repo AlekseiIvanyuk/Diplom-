@@ -5,27 +5,30 @@ import java.util.stream.Collectors;
 
 public class Todos {
 
-    public String getTask() {
-        return task;
+    private ArrayList<String> listTasks = new ArrayList<>();
+
+    public ArrayList<String> getListTasks() {
+        return listTasks;
     }
 
-    private String task;
+    public void setListTasks(ArrayList<String> listTasks) {
+        this.listTasks = listTasks;
+    }
 
-    ArrayList<String> spisok = new ArrayList<>();
 
     public void addTask(String task) {
-        spisok.add(task);
+        listTasks.add(task);
     }
 
     public void removeTask(String task) {
-        spisok.remove(task);
+        listTasks.remove(task);
     }
 
     public String getAllTasks() {
-        Collections.sort(spisok);
+        Collections.sort(listTasks);
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < spisok.size(); i++) {
-            sb.append(spisok.get(i) + " ");
+        for (int i = 0; i < listTasks.size(); i++) {
+            sb.append(listTasks.get(i) + " ");
         }
         return sb.toString();
     }

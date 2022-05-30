@@ -46,7 +46,6 @@ public class TodoServer {
                     } else {
                         if (typeParse.equals("REMOVE")) {
                             todos.removeTask(taskParse);
-                        } else {
                         }
                     }
                     //sent to client

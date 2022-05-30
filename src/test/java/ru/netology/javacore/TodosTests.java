@@ -21,7 +21,7 @@ public class TodosTests {
         sut.addTask(task);
 
         // then:
-        assertTrue(list1.equals(sut.spisok));
+        assertTrue(list1.equals(sut.getListTasks()));
     }
 
     @org.junit.jupiter.api.Test
@@ -35,7 +35,7 @@ public class TodosTests {
         sut.removeTask(task);
 
         // then:
-        assertTrue(list1.equals(sut.spisok));
+        assertTrue(list1.equals(sut.getListTasks()));
     }
 
     @org.junit.jupiter.api.Test
